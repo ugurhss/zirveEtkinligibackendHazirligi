@@ -1,0 +1,56 @@
+<!-- İletişim Bölümü -->
+
+
+
+<!-- Sosyal Medya ve Başlık -->
+<section class="social-and-title">
+    <div class="container">
+        <!-- Sosyal Medya İkonları -->
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <!-- Başlık -->
+        <h2 class="title">SİZ'25 Hakkındaki Gelişmeleri Takip Edin</h2>
+    </div>
+</section>
+
+<!-- E-posta Abonelik Formu -->
+<section class="newsletter-section">
+    <div class="container">
+        <!-- E-posta Giriş Alanı ve Buton -->
+        <form action="#" method="post" class="newsletter-form">
+            <label for="email" class="required">Mail adresinizi giriniz</label>
+            <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
+            <button type="submit" class="subscribe-button">Abone Ol!</button>
+        </form>
+
+        <!-- Onay Kutusu ve Açıklama -->
+        <div class="checkbox-container">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Zirve hakkında gelişmeleri takip etmek için aboneliğimi onaylıyorum.</label>
+        </div>
+    </div>
+</section>
+
+<!-- Logo ve Alt Yazılar -->
+<section class="footer-section">
+    <div class="container">
+        <!-- Logo ve Alt Yazılar -->
+        <div class="logo-and-text">
+            <img src="{{ asset('assets/images/Birlik_Vakfi_Bursa_Subesi_Logo.svg') }}" alt="Birlik Vakfı Burşa Şubesi" class="footer-logo">
+            <div class="footer-text">
+                <p>SÜRDÜRÜLEBİLİRLİK VE</p>
+                <p>İNSAN ZİRVESİ 2025</p>
+            </div>
+        </div>
+
+        <!-- Copyright Bilgisi -->
+        <div class="copyright">
+            <p>© 2035 by BSİZ2025. Ugur Can DOĞAN and secured by <a href="#">Ugur Can DOĞAN</a></p>
+        </div>
+    </div>
+</section>

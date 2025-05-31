@@ -1,0 +1,46 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+class AuthController extends Controller
+{
+     public function showLoginForm()
+    {
+        return view('auth.login'); // login blade sayfası
+    }
+
+   public function login(Request $request)
+    {
+        // Doğrulama kuralları
+        $credentials = $request->validate([
+            'username' => ['required', 'string'],
+            'password' => ['required', 'string'],
+        ]);
+
+        // Auth denemesi
+        if (Auth::attempt($credentials, $request->remember)) {
+            $request->session()->regenerate(); // Oturum güvenliği
+
+            return redirect()->intended('/'); // Başarılıysa yönlendirme
+        }
+
+        // Hatalı girişte geri döndür
+        return back()->withErrors([
+            'username' => 'The provided credentials do not match our records.',
+        ])->onlyInput('username');
+    }
+
+    // Kullanıcıyı çıkış yaptır
+    public function logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/login');
+    }
+}

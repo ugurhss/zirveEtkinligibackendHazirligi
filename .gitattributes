@@ -1,15 +1,15 @@
 # Laravel / PHP
-*.php text
-*.blade.php text
+*.php linguist-language=PHP
+*.blade.php linguist-language=Blade
 
 # SCSS / CSS / JS
-*.scss text
-*.css text
-*.js text
+*.scss linguist-language=SCSS
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
 
 # JSON / XML gibi veri formatları
-*.json text
-*.xml text
+*.json linguist-language=JSON
+*.xml linguist-language=XML
 
 # Satır sonları için Unix (LF) formatı
 * text=auto eol=lf
@@ -23,10 +23,3 @@
 *.ttf binary
 *.woff binary
 *.woff2 binary
-
-# Gizli ya da dışarı aktarılmaması gereken dosyalar
-.env export-ignore
-/.env export-ignore
-.gitignore export-ignore
-README.md export-ignore
-.gitattributes export-ignore

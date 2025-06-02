@@ -4,7 +4,7 @@
 
 # SCSS / CSS / JS
 *.scss linguist-language=SCSS
-*.css linguist-language=CSS
+# *.css linguist-language=CSS
 *.js linguist-language=JavaScript
 
 # JSON / XML gibi veri formatları

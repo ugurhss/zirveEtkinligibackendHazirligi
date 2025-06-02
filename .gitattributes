@@ -1,12 +1,32 @@
-# PHP dosyaları PHP olarak tanımlansın
-*.php linguist-language=PHP
+# Laravel ve PHP için önerilen ayarlar
+*.php text
+*.blade.php text
+*.env export-ignore
+/.env export-ignore
 
-# Blade dosyaları HTML olarak tanımlansın
-*.blade.php linguist-language=HTML
+# JavaScript ve CSS/SCSS
+*.js text
+*.css text
+*.scss text
 
-# SCSS ve CSS
-*.scss linguist-language=SCSS
-*.css linguist-language=CSS
+# Dil dosyaları (UTF-8 olarak kabul edilir)
+*.json text
+*.xml text
 
-# JavaScript
-*.js linguist-language=JavaScript
+# Satır sonlarını Unix formatında tut
+* text=auto eol=lf
+
+# Binary dosyalar (resim vb.)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+# GitHub'da gizlenmesini istediğin dosyaları dışarıda bırak (örnek)
+README.md export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore

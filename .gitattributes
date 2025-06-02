@@ -14,6 +14,9 @@
 # Satır sonları için Unix (LF) formatı
 * text=auto eol=lf
 
+/public/**/*.css linguist-generated
+/resources/**/*.css linguist-generated
+
 # Binary dosyalar
 *.png binary
 *.jpg binary

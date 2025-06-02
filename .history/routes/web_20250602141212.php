@@ -31,6 +31,7 @@ Route::get('/admin', [AuthController::class, 'showLoginForm']);
 
 
 
+// kulanucu
 
 
 
@@ -43,15 +44,16 @@ Route::post('/participants', [ParticipantController::class, 'store'])->name('par
 
 
 
-// Giriş yapmamış login rotaları
+// Giriş yapmamış kullanıcılar için login rotaları
 Route::middleware('guest')->group(function () {
     Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
     Route::post('/login', [AuthController::class, 'login']);
 });
 
+// Giriş yapmış kullanıcılar için logout rotası
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-// Admin paneli
+// Admin paneli sadece giriş yapan kullanıcıya açık
 Route::middleware('auth')->prefix('admin')->group(function () {
 
     // Participants Routes

@@ -1,0 +1,32 @@
+# Laravel / PHP
+*.php text
+*.blade.php text
+
+# SCSS / CSS / JS
+*.scss text
+*.css text
+*.js text
+
+# JSON / XML gibi veri formatları
+*.json text
+*.xml text
+
+# Satır sonları için Unix (LF) formatı
+* text=auto eol=lf
+
+# Binary dosyalar
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+# Gizli ya da dışarı aktarılmaması gereken dosyalar
+.env export-ignore
+/.env export-ignore
+.gitignore export-ignore
+README.md export-ignore
+.gitattributes export-ignore

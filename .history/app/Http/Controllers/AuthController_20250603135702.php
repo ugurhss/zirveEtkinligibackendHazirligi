@@ -9,7 +9,7 @@ class AuthController extends Controller
 {
      public function showLoginForm()
     {
-        return view('auth.login');
+        return view('auth.login'); // login blade sayfası
     }
 
    public function login(Request $request)
@@ -26,13 +26,14 @@ if (Auth::attempt($credentials, $request->remember)) {
         ->with('success', 'Giriş başarılı! Hoş geldiniz, ' . Auth::user()->name);
 }
 
+// Giriş başarısızsa
 return back()->withErrors([
     'email' => 'Sağlanan kimlik bilgileri doğru değil.',
 ])->withInput();
 
     }
 
-
+    // Kullanıcıyı çıkış yaptır
     public function logout(Request $request)
     {
         Auth::logout();

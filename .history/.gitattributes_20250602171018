@@ -1,0 +1,32 @@
+# Laravel ve PHP için önerilen ayarlar
+*.php text
+*.blade.php text
+*.env export-ignore
+/.env export-ignore
+
+# JavaScript ve CSS/SCSS
+*.js text
+*.css text
+*.scss text
+
+# Dil dosyaları (UTF-8 olarak kabul edilir)
+*.json text
+*.xml text
+
+# Satır sonlarını Unix formatında tut
+* text=auto eol=lf
+
+# Binary dosyalar (resim vb.)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+# GitHub'da gizlenmesini istediğin dosyaları dışarıda bırak (örnek)
+README.md export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore

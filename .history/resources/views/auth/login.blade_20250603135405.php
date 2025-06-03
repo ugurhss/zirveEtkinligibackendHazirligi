@@ -34,8 +34,7 @@
       margin-bottom: 20px;
     }
 
-    .input-box input[type="text"],
-    .input-box input[type="password"] {
+    .input-box input {
       width: 100%;
       padding: 12px;
       border: 1px solid #ddd;
@@ -47,15 +46,6 @@
     .input-box input:focus {
       border-color: #667eea;
       box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
-    }
-
-    .checkbox {
-      margin-bottom: 20px;
-      font-size: 14px;
-    }
-
-    .checkbox label {
-      color: #555;
     }
 
     button {
@@ -79,48 +69,32 @@
       font-size: 14px;
       margin-bottom: 10px;
     }
-
-    .success {
-      color: green;
-      font-size: 14px;
-      margin-bottom: 15px;
-      text-align: center;
-    }
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <form action="{{ route('login') }}" method="POST">
-      @csrf
+  <form action="/login" method="POST">
+  @csrf
 
-      <h1>Giriş Yap</h1>
+  <h1>Giriş Yap</h1>
 
-      @if(session('success'))
-        <div class="success">{{ session('success') }}</div>
-      @endif
+  @error('email')
+    <div class="error">{{ $message }}</div>
+  @enderror
+  <div class="input-box">
+    <input type="text" name="email" placeholder="E-posta" value="{{ old('email') }}">
+  </div>
 
-      @error('email')
-        <div class="error">{{ $message }}</div>
-      @enderror
-      <div class="input-box">
-        <input type="text" name="email" placeholder="E-posta" value="{{ old('email') }}">
-      </div>
+  @error('password')
+    <div class="error">{{ $message }}</div>
+  @enderror
+  <div class="input-box">
+    <input type="password" name="password" placeholder="Şifre">
+  </div>
 
-      @error('password')
-        <div class="error">{{ $message }}</div>
-      @enderror
-      <div class="input-box">
-        <input type="password" name="password" placeholder="Şifre">
-      </div>
+  <button type="submit">Giriş Yap</button>
+</form>
 
-      <div class="checkbox">
-        <label>
-          <input type="checkbox" name="remember"> Beni hatırla
-        </label>
-      </div>
-
-      <button type="submit">Giriş Yap</button>
-    </form>
   </div>
 </body>
 </html>

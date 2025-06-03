@@ -3,7 +3,7 @@
         <!-- Logo ve Başlık -->
         <div class="logo-and-title">
             <img src="{{ asset('assets/images/siz-insta-logo (1).jpg') }}" alt="SİZ 2025 Logo" class="logo-contact">
-          <br><hr>  <h2 class="title">Sponsorluk ve Bilgi İçin</h2>
+          <br><hr>  <h2 class="title2">Sponsorluk ve Bilgi İçin</h2>
         </div>
 
         <!-- İletişim Bilgileri -->

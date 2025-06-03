@@ -22,4 +22,11 @@
         </div>
     </div>
 </section>
-
+<style>
+    .title {
+        color: rgb(37, 4, 52);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>

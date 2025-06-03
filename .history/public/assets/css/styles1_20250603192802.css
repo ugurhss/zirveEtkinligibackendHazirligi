@@ -523,7 +523,7 @@ body{
     }
 
     .title {
-        color: #ffffff !important;  /* Pure white with !important to override any other styles */
+        color: white;
         font-size: 2rem;
         margin: 10px 0;
         width: 100%;
@@ -987,7 +987,7 @@ h4 {
 }
 
 .contact .heading h2 span {
-    color: rgb(37, 4, 52);
+    color: #ff9100;
 }
 
 .contact .heading p {
@@ -1012,7 +1012,7 @@ h4 {
     padding: 10px;
     border-radius: 10px;
     font-size: 15px;
-    background: rgb(37, 4, 52);
+    background: #ff9100;
     color: #ffffff;
 }
 
@@ -1020,7 +1020,7 @@ h4 {
     font-size: 18px;
     font-weight: 600;
 }
-/* iletşim */
+
 .contact .title p {
     font-size: 14px;
     font-weight: 400;

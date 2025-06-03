@@ -492,94 +492,86 @@ body{
 
 
 /* İletişim sponsor kısmı */
- .contact-section {
-        background-color: #000024; /* Siyah-mor arka plan */
-        color: white;
-        padding: 60px 20px;
-        text-align: center;
-    }
+.contact-section {
+    background-color: #000024; /* Siyah-mor arka plan */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
 
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-    /* Logo ve Başlık */
-    .logo-and-title {
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+/* Logo ve Başlık */
+.logo-and-title {
+    margin-bottom: 10px; /* Logo ile iletişim bilgileri arasına boşluk */
+}
 
-    .logo-contact {
-        width: 170px;
-        height: auto;
-        max-width: 100%;
-        object-fit: contain;
-        border-radius: 25px;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        margin-bottom: 20px;
-    }
+.logo-contact {
+    width: 170px; /* Logo boyutunu ayarla */
+    height: auto;
+    max-width: 100%; /* Responsive tasarımı sağlamak için */
+    object-fit: contain; /* Resim skalasını koruma */
+    border-radius: 25px; /* Yuvarlak kenarlık */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Işık efekti */
+}
 
-    .title {
-        color: #ffffff !important;  /* Pure white with !important to override any other styles */
-        font-size: 2rem;
-        margin: 10px 0;
-        width: 100%;
-    }
+.title {
+    color: white;
+    background-color: white;
+    font-size: 2rem;
+    /* margin: 0; */
+}
 
-    .divider {
-        width: 100px;
-        height: 2px;
-        background: white;
-        margin: 15px auto;
-    }
+/* İletişim Bilgileri */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px; /* Öğeler arasında boşluk */
+}
 
-    /* İletişim Bilgileri */
+.contact-item {
+    display: flex;
+    flex-direction: column; /* Dikey olarak sıralama */
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.email, .phone {
+    color: white;
+}
+
+.email-link, .phone-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover, .phone-link:hover {
+    color: #6a0dad; /* Veya istediğiniz renk */
+}
+
+/* Mobil Uyumlu */
+@media (max-width: 768px) {
     .contact-info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .contact-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        font-size: 1.2rem;
+        justify-content: center;
     }
 
-    .contact-item i {
-        font-size: 1.5rem;
-        color: white;
+    .logo-contact {
+        width: 150px; /* Mobilde daha küçük bir boyut */
     }
+}
 
-    .email-link, .phone-link {
-        color: white;
-        text-decoration: none;
-        transition: color 0.3s ease;
-        font-weight: 500;
-    }
 
-    .email-link:hover, .phone-link:hover {
-        color: #a78bfa;
-    }
-
-    /* Mobil Uyumlu */
-    @media (max-width: 768px) {
-        .contact-info {
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .title {
-            font-size: 1.5rem;
-        }
-    }
 
 /* Footer Stilleri */
 .footer-section {
@@ -987,7 +979,7 @@ h4 {
 }
 
 .contact .heading h2 span {
-    color: rgb(37, 4, 52);
+    color: #ff9100;
 }
 
 .contact .heading p {
@@ -1012,7 +1004,7 @@ h4 {
     padding: 10px;
     border-radius: 10px;
     font-size: 15px;
-    background: rgb(37, 4, 52);
+    background: #ff9100;
     color: #ffffff;
 }
 
@@ -1020,7 +1012,7 @@ h4 {
     font-size: 18px;
     font-weight: 600;
 }
-/* iletşim */
+
 .contact .title p {
     font-size: 14px;
     font-weight: 400;

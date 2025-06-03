@@ -14,7 +14,7 @@
         </div>
 
         <!-- Başlık -->
-        <h2 class="title2" >SİZ'25 Hakkındaki Gelişmeleri Takip Edin</h2>
+        <h2 class="title" >SİZ'25 Hakkındaki Gelişmeleri Takip Edin</h2>
     </div>
 </section>
 
@@ -55,14 +55,14 @@
     </div>
 </section>
 <style>
-    .title2 {
-    color: rgb(37, 4, 52);
+    .title {
+    color: rgb(64, 12, 88);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 28px;
     font-weight: 600;
     text-align: center;
     margin: 25px 0;
     padding-bottom: 10px;
-    border-bottom: 2px solid rgba(37, 4, 52, 0.5);
+    border-bottom: 2px solid rgba(37, 4, 52, 0.2);
 }
 </style>

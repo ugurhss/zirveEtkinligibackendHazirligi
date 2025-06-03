@@ -22,4 +22,9 @@
         </div>
     </div>
 </section>
+<style>
+    .title {
+        color: rgb(255, 255, 255);
 
+    }
+</style>

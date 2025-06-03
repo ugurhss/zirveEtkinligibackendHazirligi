@@ -55,7 +55,7 @@
     </div>
 </section>
 <style>
-    .title2 {
+    .title {
     color: rgb(37, 4, 52);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 28px;

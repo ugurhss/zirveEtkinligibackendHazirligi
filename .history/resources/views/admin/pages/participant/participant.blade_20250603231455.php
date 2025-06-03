@@ -50,7 +50,7 @@
      border-radius: 6px;
      text-decoration: none;
      font-weight: 900;
-     font-size: 1.3rem;
+     font-size: 2rem;
      box-shadow: 0 4px 8px rgb(40 167 69 / 0.3);
      transition: background-color 0.3s ease, box-shadow 0.3s ease;
    "

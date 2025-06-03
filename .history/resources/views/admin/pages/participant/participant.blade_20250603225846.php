@@ -39,29 +39,15 @@
                             <div class="right-section" style="display: flex; align-items: center; gap: 15px;">
                                 <h3 style="margin: 0; color: #333; font-size: 1.4rem;">Etkinlik Katılımcıları</h3>
                                 <div class="vr" style="height: 30px; width: 1px; background: #e0e0e0;"></div>
-                            <a href="{{ route('admin.participants.export') }}"
-   style="
-     display: inline-flex;
-     align-items: center;
-     gap: 23px;
-     padding: 10px 18px;
-     background-color: #28a745;
-     color: white;
-     border-radius: 6px;
-     text-decoration: none;
-     font-weight: 900;
-     font-size: 1.3rem;
-     box-shadow: 0 4px 8px rgb(40 167 69 / 0.3);
-     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-   "
-   onmouseover="this.style.backgroundColor='#218838'; this.style.boxShadow='0 6px 12px rgb(33 136 56 / 0.5)';"
-   onmouseout="this.style.backgroundColor='#28a745'; this.style.boxShadow='0 4px 8px rgb(40 167 69 / 0.3)';"
->
-  <i class="fas fa-file-excel" aria-hidden="true" style="font-size: 1.2rem;"></i>
-  <span>Excel İndir</span>
-</a>
-
-
+                                <a
+                                    href="/admin/participants/export"
+                                    style="background: #28a745; color: white; padding: 8px 15px; border-radius: 4px; text-decoration: none; display: flex; align-items: center; gap: 8px; white-space: nowrap; transition: background 0.2s;"
+                                    onmouseover="this.style.background='#218838'"
+                                    onmouseout="this.style.background='#28a745'"
+                                >
+                                    <i class="fas fa-file-excel"></i>
+                                    <span>Excel İndir</span>
+                                </a>
                             </div>
                         </div>
 

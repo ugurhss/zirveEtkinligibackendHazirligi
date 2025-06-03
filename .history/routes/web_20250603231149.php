@@ -61,7 +61,8 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         ->name('admin.participants.show');
     Route::delete('/participants/{participant}', [ParticipantController::class, 'destroy'])
         ->name('admin.participants.destroy');
-
+    Route::get('/participants/export', [ParticipantController::class, 'export'])
+        ->name('admin.participants.export');
 
     // Contact Messages Routes
     Route::get('/contact', [MessageController::class, 'index'])

@@ -43,14 +43,14 @@
    style="
      display: inline-flex;
      align-items: center;
-     gap: 23px;
+     gap: 8px;
      padding: 10px 18px;
      background-color: #28a745;
      color: white;
      border-radius: 6px;
      text-decoration: none;
-     font-weight: 900;
-     font-size: 1.3rem;
+     font-weight: 600;
+     font-size: 1rem;
      box-shadow: 0 4px 8px rgb(40 167 69 / 0.3);
      transition: background-color 0.3s ease, box-shadow 0.3s ease;
    "

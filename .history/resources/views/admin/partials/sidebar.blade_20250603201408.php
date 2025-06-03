@@ -3,7 +3,7 @@
 			<h5>Navigation</h5>
 			<ul>
 				<li><a href="/"><em class="fa fa-home"></em> Dasboard</a></li>
-                <li><a href="/admin/newsletter"><em class="fa fa-pencil"></em> Aboneler</a></li>
+                <li><a href="/admin/newsletter"><em class="fa fa-home"></em> Aboneler</a></li>
 				<li><a href="/admin/contact"><em class="fa fa-bar-chart"></em>Gelen Mesajlar</a></li>
 				<li><a href="/admin/participants"><em class="fa fa fa-clone"></em>Etkinlige Katılacak Olanla</a></li>
 

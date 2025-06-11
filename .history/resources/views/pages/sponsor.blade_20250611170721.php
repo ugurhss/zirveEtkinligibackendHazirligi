@@ -37,66 +37,87 @@ VE İNSAN ZİRVESİ
     <div class="container">
         <h2 class="zirve-baslik">ZİRVE DEĞERLERİ</h2>
         <div class="card-container">
-            <div class="card">
-                <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Teknoloji Odaklı" style="border-radius: 8px;">
-            </div>
-            <div class="card">
-                <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Yenilikçi Bir Bakış" style="border-radius: 8px;">
-            </div>
-            <div class="card">
-                <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg" alt="Değer Odaklı Bir Yaklaşım" style="border-radius: 8px;">
-            </div>
-            <div class="card">
-                <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg" alt="Geniş Katılım" style="border-radius: 8px;">
-            </div>
+       <div class="card">
+    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Teknoloji Odaklı" style="border-radius: 8px 8px 0 0;">
+    <h3>TEKNOLOJİ ODAKLI</h3>
+</div>
+<div class="card">
+    <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="Yenilikçi Bir Bakış" style="border-radius: 8px 8px 0 0;">
+    <h3>YENİLİKÇİ BİR BAKIŞ</h3>
+</div>
+<div class="card">
+    <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg" alt="Değer Odaklı Bir Yaklaşım" style="border-radius: 8px 8px 0 0;">
+    <h3>DEĞER ODAKLI BİR YAKLAŞIM</h3>
+</div>
+<div class="card">
+    <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg" alt="Geniş Katılım" style="border-radius: 8px 8px 0 0;">
+    <h3>GENİŞ KATILIM</h3>
+</div>
         </div>
     </div>
-</section>
+</section><br>
+
+@include("sections.sponsor")
 
 <style>
     /* Genel Stiller */
-    .zirve-degerleri {
-        background-color: #f8f9fa;
-        padding: 50px 0;
-        text-align: center;
-    }
+.zirve-degerleri {
+    background-color: #f8f9fa; /* Açık gri arka plan */
+    padding: 50px 0;
+    text-align: center;
+}
 
-    .zirve-baslik {
-        font-size: 2.5em;
-        color: rgb(37, 4, 52);
-        margin-bottom: 30px;
-    }
+.zirve-baslik {
+    font-size: 2.5em;
+    color: #666;
+    margin-bottom: 30px;
+}
 
-    .card-container {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Mobilde alt alta sıralamak için */
+}
 
+.card {
+    width: calc(25% - 20px); /* Desktop'ta 4 eşit sütun */
+    background-color: #2c3e50; /* Siyah-mavi arka plan */
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05); /* Fare üzerine geldiğinde büyüme efekti */
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.5); /* Resmi aydınlıklatma */
+}
+
+.card h3 {
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Mobil Uyum (Alt Alta Sıralama) */
+@media (max-width: 768px) {
     .card {
-        width: calc(25% - 20px);
-        border-radius: 10px;
-        overflow: hidden;
-        transition: transform 0.3s ease;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%; /* Mobilde tam genişlik */
     }
-
-    .card:hover {
-        transform: scale(1.05);
-    }
-
-    .card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-
-    /* Mobil Uyum */
-    @media (max-width: 768px) {
-        .card {
-            width: 100%;
-        }
-    }
+}
 </style>
-@endsection
+
+
+
+
+    @endsection

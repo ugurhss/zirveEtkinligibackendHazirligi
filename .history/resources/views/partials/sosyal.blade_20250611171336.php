@@ -15,10 +15,10 @@
         </a>
 
          <a href="https://twitter.com/" target="_blank" class="sosyal-medya2-ikon sosyal-medya2-twitter">
-            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-twitter"></i>
         </a>
          <a href="https://youtbe.com/" target="_blank" class="sosyal-medya2-ikon sosyal-medya2-twitter">
-            <i class="fab fa-youtube"></i>
+            <i class="fab fa-youtbe"></i>
         </a>
     </div>
 

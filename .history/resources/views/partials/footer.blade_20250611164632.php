@@ -16,9 +16,7 @@
         </div>
 
         <!-- Başlık -->
-<h2 class="title2" style="color: rgba(32, 30, 30); font-size: 24px;">
-  SİZ'25 Hakkındaki Gelişmeleri Takip Edin
-</h2>
+        <h2 class="title2" style="color:white" >SİZ'25 Hakkındaki Gelişmeleri Takip Edin</h2>
     </div>
 </section>
 

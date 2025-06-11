@@ -450,7 +450,7 @@ body{
     margin: 0 auto 60px;
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #444;
+    color: #f9f8f8;
 }
 
 .participants-grid {
@@ -477,13 +477,13 @@ body{
 
 .participant-icon {
     font-size: 2.5rem;
-    color: rgb(37, 4, 52);
+    color: #000000;
     margin-bottom: 20px;
 }
 
 .participant-name {
     font-size: 1.3rem;
-    color: rgb(37, 4, 52);
+    color: #333;
     margin-bottom: 15px;
     font-weight: 600;
 }
@@ -770,7 +770,6 @@ input[type="email"]:focus {
       color: #f0f0f0;
 }
 
-
 /* Başlık */
 .zirve-baslik {
     font-size: 3rem;
@@ -781,7 +780,7 @@ input[type="email"]:focus {
 
 .zirve-altbaslik {
     font-size: 1.8rem;
-    margin: 0 0 40px;
+    margin: 0 0;
     font-weight: bold;
       color: #f0f0f0;
 }

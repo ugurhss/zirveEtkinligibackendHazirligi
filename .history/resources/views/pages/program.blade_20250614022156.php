@@ -137,7 +137,7 @@ VE İNSAN ZİRVESİ
 </div>
 
 <!-- Carousel Section -->
-<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" >
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
@@ -146,24 +146,12 @@ VE İNSAN ZİRVESİ
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="{{ asset('assets/images/program-banner-1.jpg') }}" class="d-block w-100" alt="First slide">
-            {{-- <div class="carousel-caption d-none d-md-block">
-                <h5>Başlık 1</h5>
-                <p>Açıklama metni</p>
-            </div> --}}
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('assets/images/program-banner-2.jpg') }}" class="d-block w-100" alt="First slide">
-            {{-- <div class="carousel-caption d-none d-md-block">
-                <h5>Başlık 2</h5>
-                <p>Açıklama metni</p>
-            </div> --}}
+            <img src="{{ asset('assets/images/program-banner-2.jpg') }}" class="d-block w-100" alt="Second slide">
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('assets/images/program-banner-3.jpg') }}" class="d-block w-100" alt="First slide">
-            {{-- <div class="carousel-caption d-none d-md-block">
-                <h5>Başlık 3</h5>
-                <p>Açıklama metni</p>
-            </div> --}}
+            <img src="{{ asset('assets/images/program-banner-3.jpg') }}" class="d-block w-100" alt="Third slide">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
@@ -173,25 +161,24 @@ VE İNSAN ZİRVESİ
         <span class="carousel-control-next-icon"></span>
     </button>
 </div>
+
 <style>
     #mainCarousel {
-    height: 300px; /*  */
-}
+        height: 300px; /* Fixed height for the carousel */
+        overflow: hidden; /* Prevents any overflow from causing extra space */
+        margin-bottom: 20px; /* Adjust this value to control space below carousel */
+    }
 
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
-}
+    #mainCarousel .carousel-inner,
+    #mainCarousel .carousel-item {
+        height: 100%; /* Fill the carousel height */
+    }
 
-
+    #mainCarousel .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This will cover the area without distorting aspect ratio */
+    }
 </style>
 
     @endsection

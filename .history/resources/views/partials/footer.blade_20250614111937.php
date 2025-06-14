@@ -11,8 +11,8 @@
 
             <a href="https://www.instagram.com//bsizorg"><i class="fab fa-instagram"></i></a>
             <a href="https://twitter.com//bsizorg"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/company/bsizorg/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://youtbe.com/"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
 
         <!-- Başlık -->
@@ -67,7 +67,7 @@
 
         <!-- Copyright Bilgisi -->
         <div class="copyright">
-            <p>© 2025 by BSİZ2025.  <a href="#"></a></p>
+            <p>© 2035 by BSİZ2025. Ugur Can DOĞAN and secured by <a href="#">Ugur Can DOĞAN</a></p>
         </div>
     </div>
 </section>

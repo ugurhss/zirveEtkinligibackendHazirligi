@@ -137,7 +137,7 @@ VE İNSAN ZİRVESİ
 </div>
 
 <!-- Carousel Section -->
-<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" >
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" style=" height: 300px;">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
@@ -145,22 +145,28 @@ VE İNSAN ZİRVESİ
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{{ asset('assets/images/program-banner-1.jpg') }}" class="d-block w-100" alt="First slide">
-            {{-- <div class="carousel-caption d-none d-md-block">
+<img src="{{ asset('assets/images/program-banner-1.jpg') }}"
+     class="d-block w-100"
+     alt="First slide"
+     style="height: 100%; object-fit: cover; object-position: center;">            {{-- <div class="carousel-caption d-none d-md-block">
                 <h5>Başlık 1</h5>
                 <p>Açıklama metni</p>
             </div> --}}
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('assets/images/program-banner-2.jpg') }}" class="d-block w-100" alt="First slide">
-            {{-- <div class="carousel-caption d-none d-md-block">
+<img src="{{ asset('assets/images/program-banner-2.jpg') }}"
+     class="d-block w-100"
+     alt="First slide"
+     style="height: 100%; object-fit: cover; object-position: center;">            {{-- <div class="carousel-caption d-none d-md-block">
                 <h5>Başlık 2</h5>
                 <p>Açıklama metni</p>
             </div> --}}
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('assets/images/program-banner-3.jpg') }}" class="d-block w-100" alt="First slide">
-            {{-- <div class="carousel-caption d-none d-md-block">
+<img src="{{ asset('assets/images/program-banner-3.jpg') }}"
+     class="d-block w-100"
+     alt="First slide"
+     style="height: 100%; object-fit: cover; object-position: center;">            {{-- <div class="carousel-caption d-none d-md-block">
                 <h5>Başlık 3</h5>
                 <p>Açıklama metni</p>
             </div> --}}
@@ -173,26 +179,7 @@ VE İNSAN ZİRVESİ
         <span class="carousel-control-next-icon"></span>
     </button>
 </div>
-<style>
-    #mainCarousel {
-    height: 300px; /*  */
-}
 
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
-}
-
-
-</style>
 
     @endsection
 

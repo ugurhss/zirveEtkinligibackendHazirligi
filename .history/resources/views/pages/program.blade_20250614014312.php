@@ -175,23 +175,21 @@ VE İNSAN ZİRVESİ
 </div>
 <style>
     #mainCarousel {
-    height: 300px; /*  */
+    height: 300px; /* İstediğiniz yüksekliği burada ayarlayın */
 }
 
 #mainCarousel .carousel-inner,
 #mainCarousel .carousel-item,
 #mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
+    height: 100%; /* İçeriklerin yüksekliğini tam doldurmasını sağlar */
+    object-fit: cover; /* Resimlerin boyutlandırılmasını ayarlar (kırpma yapar) */
 }
 #mainCarousel .carousel-item img {
     width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
+    height: auto; /* Yüksekliği otomatik ayarla (orantı korunsun) */
+    object-fit: cover; /* Kırparak sığdır (tam ekran efekti) */
+    /* object-fit: contain; --> Resmin tamamını göster (kenarlarda boşluk olabilir) */
 }
-
-
 </style>
 
     @endsection

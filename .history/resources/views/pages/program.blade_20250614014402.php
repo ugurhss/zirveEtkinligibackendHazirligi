@@ -190,8 +190,6 @@ VE İNSAN ZİRVESİ
     object-fit: cover; /**/
     /* object-fit: contain; --*/
 }
-
-
 </style>
 
     @endsection

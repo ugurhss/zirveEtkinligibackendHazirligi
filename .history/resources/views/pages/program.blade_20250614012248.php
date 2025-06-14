@@ -137,62 +137,42 @@ VE İNSAN ZİRVESİ
 </div>
 
 <!-- Carousel Section -->
-<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" >
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+<div class="container-fluid px-0">
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 980px; margin: 0 auto;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner ratio ratio-16x9" style="--bs-aspect-ratio: 41.8%;">
+            <div class="carousel-item active">
+                <img src="{{ asset('assets/images/program-banner-1.jpg') }}" class="d-block w-100" alt="Slide 1" style="object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('assets/images/program-banner-2.jpg') }}" class="d-block w-100" alt="Slide 2" style="object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('assets/images/program-banner-3.jpg') }}" class="d-block w-100" alt="Slide 3" style="object-fit: cover;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="{{ asset('assets/images/program-banner-1.jpg') }}" class="d-block w-100" alt="First slide">
-            {{-- <div class="carousel-caption d-none d-md-block">
-                <h5>Başlık 1</h5>
-                <p>Açıklama metni</p>
-            </div> --}}
-        </div>
-        <div class="carousel-item">
-            <img src="{{ asset('assets/images/program-banner-2.jpg') }}" class="d-block w-100" alt="First slide">
-            {{-- <div class="carousel-caption d-none d-md-block">
-                <h5>Başlık 2</h5>
-                <p>Açıklama metni</p>
-            </div> --}}
-        </div>
-        <div class="carousel-item">
-            <img src="{{ asset('assets/images/program-banner-3.jpg') }}" class="d-block w-100" alt="First slide">
-            {{-- <div class="carousel-caption d-none d-md-block">
-                <h5>Başlık 3</h5>
-                <p>Açıklama metni</p>
-            </div> --}}
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
 </div>
+
 <style>
+    /* Temel boyutlandırma */
     #mainCarousel {
-    height: 300px; /*  */
-}
+        width: 1392px;
+        height: 428px;
+    }
 
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
-}
-
+    /* Mobil uyumluluk */
 
 </style>
-
     @endsection
 

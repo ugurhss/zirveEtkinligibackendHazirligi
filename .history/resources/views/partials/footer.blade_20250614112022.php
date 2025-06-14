@@ -67,7 +67,7 @@
 
         <!-- Copyright Bilgisi -->
         <div class="copyright">
-            <p>© 2025 by BSİZ2025.  <a href="#"></a></p>
+            <p>© 2035 by BSİZ2025.  <a href="#"></a></p>
         </div>
     </div>
 </section>

@@ -31,19 +31,16 @@ VE İNSAN ZİRVESİ
 <div class="program-container">
     <h2>Program</h2>
     <h3>14 May Çar</h3>
-    <p>Sürdürülebilirlik ve İnsan Zirvesi 2025 | Bursa | Kasım 2025
-</p>
 
     <div class="event">
-
-
+        <time>10:00 - 11:00</time>
         <span class="duration">1 saat</span>
         <h4>Açılış Konuşmaları</h4>
         <button class="content-toggle">İçerik</button>
         <div class="content" style="display: none;">
-            <p>Açılış Konuşmaları</p>
+            <p>Siz25</p>
             <ul>
-                {{-- <li>Açılış Konusması </li> --}}
+                <li>Açılış Konusması </li>
 
             </ul>
         </div>
@@ -58,8 +55,8 @@ VE İNSAN ZİRVESİ
         <div class="content" style="display: none;">
             <p>Dijital Dünya'da Ekonomi Politikları Nasıl Olmalı ?</p>
             <ul>
-                {{-- <li>Moderatör:</li>
-                <li>Katılımcılar: TÜBİTAK,  Üniversitesi</li> --}}
+                {{-- <li>Moderatör: Dr. Ayşe Kaya</li>
+                <li>Katılımcılar: TÜBİTAK, İstanbul Üniversitesi</li> --}}
             </ul>
         </div>
     </div>
@@ -67,77 +64,41 @@ VE İNSAN ZİRVESİ
 
 
       <div class="event">
-        <time>12:30 - 13:30</time>
+        <time>11:00 - 12:00</time>
         <span class="duration">1 saat</span>
         <h4>Öğle Yemeği</h4>
-        <p>Yemekhane</p>
+        <p>Ana Sahne</p>
         <button class="content-toggle">İçerik</button>
         <div class="content" style="display: none;">
             <p>Yemekhane</p>
             <ul>
-                {{-- <li>Moderatör: /li>
-                <li>Katılımcılar: TÜBİTAK,  Üniversitesi</li> --}}
+                {{-- <li>Moderatör: Dr. Ayşe Kaya</li>
+                <li>Katılımcılar: TÜBİTAK, İstanbul Üniversitesi</li> --}}
             </ul>
         </div>
     </div>
 
 
       <div class="event">
-        <time>13:30 - 14:30</time>
+        <time>11:00 - 12:00</time>
         <span class="duration">1 saat</span>
-        <h4>Panel 2 : Sanayi ve İstihdam</h4>
+        <h4>Panel 1: Kamu ve Akademi</h4>
         <p>Ana Sahne</p>
         <button class="content-toggle">İçerik</button>
         <div class="content" style="display: none;">
-            <p>Dijital Ekonomide Sürdürülebilir Rekabet Stratejileri
-
-</p>
+            <p>Kamu-akademi işbirliği üzerine tartışmalar.</p>
             <ul>
-                {{-- <li>Moderatör:</li>
-                <li>Katılımcılar: TÜBİTAK,  Üniversitesi</li> --}}
+                <li>Moderatör: Dr. Ayşe Kaya</li>
+                <li>Katılımcılar: TÜBİTAK, İstanbul Üniversitesi</li>
             </ul>
         </div>
     </div>
 
-  <div class="event">
-        <time>14:30 - 15:00</time>
-        <span class="duration">30 dakika</span>
-        <h4>Ara</h4>
-        <p>Ana Sahne</p>
-        <button class="content-toggle">İçerik</button>
-        <div class="content" style="display: none;">
-            <p>Yemekhane</p>
-            <ul>
-                {{-- <li>Moderatör: /li>
-                <li>Katılımcılar: TÜBİTAK,  Üniversitesi</li> --}}
-            </ul>
-        </div>
-    </div>
-
-
-
-  <div class="event">
-        <time>15:00 - 16:00</time>
-        <span class="duration">1 saat</span>
-        <h4>Panel 3 : Politika ve Medya
-</h4>
-        <p>Ana Sahne</p>
-        <button class="content-toggle">İçerik</button>
-        <div class="content" style="display: none;">
-            <p>Dijital Ekonomide Toplumsal Beklentiler ve Gençlik
-
-</p>
-            <ul>
-                {{-- <li>Moderatör: /li>
-                <li>Katılımcılar: TÜBİTAK,  Üniversitesi</li> --}}
-            </ul>
-        </div>
-    </div>
 
 </div>
 
 <!-- Carousel Section -->
-<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" >
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
@@ -172,27 +133,6 @@ VE İNSAN ZİRVESİ
     <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
     </button>
-</div>
-<style>
-    #mainCarousel {
-    height: 300px; /*  */
-}
-
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
-}
-
-
-</style>
-
+</div> <br>
     @endsection
 

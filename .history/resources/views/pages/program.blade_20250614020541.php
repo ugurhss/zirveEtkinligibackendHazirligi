@@ -175,24 +175,40 @@ VE İNSAN ZİRVESİ
 </div>
 <style>
     #mainCarousel {
-    height: 300px; /*  */
-}
+        height: 300px; /* Masaüstü varsayılan yükseklik */
+        overflow: hidden; /* Taşan içeriği kes */
+    }
 
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
-}
+    #mainCarousel .carousel-inner {
+        height: 100%;
+    }
 
+    #mainCarousel .carousel-item {
+        height: 100%;
+        width: 100%;
+    }
 
+    #mainCarousel .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Resmi oranlarını koruyarak alanı kapla */
+        object-position: center; /* Resmi ortala (opsiyonel) */
+    }
+
+    /* Mobil için responsive ayar */
+    @media (max-width: 768px) {
+        #mainCarousel {
+            height: 200px; /* Mobil yükseklik */
+        }
+    }
+
+    /* Ekstra garanti önlemler */
+    .carousel-item {
+        transition: transform 0.6s ease-in-out; /* Animasyonu düzelt */
+    }
+    .carousel-item.active {
+        display: block; /* Aktif öğeyi düzgün göster */
+    }
 </style>
-
     @endsection
 

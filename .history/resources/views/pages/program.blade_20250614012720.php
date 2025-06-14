@@ -137,7 +137,7 @@ VE İNSAN ZİRVESİ
 </div>
 
 <!-- Carousel Section -->
-<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" >
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
@@ -174,25 +174,31 @@ VE İNSAN ZİRVESİ
     </button>
 </div>
 <style>
+    <style>
     #mainCarousel {
-    height: 300px; /*  */
-}
+        max-width: 800px; /* İstediğiniz genişlik */
+        margin: auto;
+    }
 
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
-}
+    .carousel-inner {
+        height: 400px; /* İstediğiniz yükseklik */
 
 
+    }
+
+    /* .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        object-position: center;
+    } */
+
+    @media (max-width: 768px) {
+        .carousel-inner {
+            height: 250px;
+        }
+    }
 </style>
-
+</style>
     @endsection
 

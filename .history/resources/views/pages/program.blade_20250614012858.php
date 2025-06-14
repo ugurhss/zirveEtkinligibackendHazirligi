@@ -137,7 +137,7 @@ VE İNSAN ZİRVESİ
 </div>
 
 <!-- Carousel Section -->
-<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" >
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
@@ -174,25 +174,42 @@ VE İNSAN ZİRVESİ
     </button>
 </div>
 <style>
+    <style>
     #mainCarousel {
-    height: 300px; /*  */
-}
+        max-width: 800px; /* Genişliği ayarla */
+        margin: auto; /* Ortalamak için */
+    }
 
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
-}
+    .carousel-inner {
+        height: 270px; /* Orantılı yükseklik (3:1 oranında) */
+        border-radius: 10px;
+        overflow: hidden;
+    }
 
+    .carousel-item img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* Oranı koruyarak sığdır */
+        object-position: center; /* Ortalama */
+    }
 
+    /* Mobil uyum */
+    @media (max-width: 768px) {
+        #mainCarousel {
+            max-width: 100%;
+        }
+
+        .carousel-inner {
+            height: 220px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .carousel-inner {
+            height: 180px;
+        }
+    }
 </style>
-
+</style>
     @endsection
 

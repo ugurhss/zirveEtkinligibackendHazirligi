@@ -137,7 +137,7 @@ VE İNSAN ZİRVESİ
 </div>
 
 <!-- Carousel Section -->
-<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" >
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
@@ -175,23 +175,19 @@ VE İNSAN ZİRVESİ
 </div>
 <style>
     #mainCarousel {
-    height: 300px; /*  */
+    height: 300px; /* İstediğiniz yüksekliği burada ayarlayın */
 }
 
 #mainCarousel .carousel-inner,
 #mainCarousel .carousel-item,
 #mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
+    height: 100%; /* İçeriklerin yüksekliğini tam doldurmasını sağlar */
+    object-fit: cover; /* Resimlerin boyutlandırılmasını ayarlar (kırpma yapar) */
 }
 #mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
+    object-fit: contain; /* Resimlerin tamamını gösterir (boşluk bırakabilir) */
+    background-color: #f8f9fa; /* Boş alanlar için arkaplan rengi */
 }
-
-
 </style>
 
     @endsection

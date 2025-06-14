@@ -24,7 +24,7 @@ VE İNSAN ZİRVESİ
                 </p>
                 <p>
                     Bu amaçlar doğrultusunda düzenlenecek Sürdürülebilirlik ve İnsan Zirvesi’nin bu seneki temasının “Dijital Ekonomi” olmasına karar verilmiştir. Açılış konuşmaları ve 3 panel şeklinde organize edilmesi planlanan etkinliğin, katılımcıları ve gündeme getireceği başlıklarla ulusal düzeyde ses getirecek bir etkinlik olacağı düşünülmektedir.
-                <br><br></p>
+                <br></p>
             </div>
 
             <!-- Logo -->
@@ -66,29 +66,29 @@ VE İNSAN ZİRVESİ
 </div>
 
 <style>
-
+    /* TEMEL AYARLAR */
     #mainCarousel {
         width: 100%;
-        overflow: hidden; /* Taşan  kes */
-        position: relative; /* iç için referans oluştur */
+        overflow: hidden; /* Taşan içeriği kes */
+        position: relative; /* İçerik için referans oluştur */
     }
 
     /* MOBİL İÇİN (Yatay modda) */
     @media (max-width: 768px) and (orientation: portrait) {
         #mainCarousel {
-            height: 60vw !important;
-            min-height: 200px;
+            height: 60vw !important; /* Ekran genişliğinin %60'ı kadar yükseklik */
+            min-height: 200px; /* Minimum yükseklik garantisi */
         }
     }
 
-
+    /* MASAÜSTÜ ve TABLET (Dikey mod) */
     @media (min-width: 769px), (orientation: landscape) {
         #mainCarousel {
-            height: 400px;
+            height: 400px; /* Sabit yükseklik */
         }
     }
 
-
+    /* RESİM AYARLARI (Tüm cihazlar) */
     #mainCarousel .carousel-inner,
     #mainCarousel .carousel-item {
         height: 100%;
@@ -99,13 +99,13 @@ VE İNSAN ZİRVESİ
     #mainCarousel .carousel-item img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        object-position: center;
+        object-fit: cover; /* Resmi alana sığdır */
+        object-position: center; /* Ortala */
     }
 
-
+    /* İNDİKATÖR ve BUTON AYARLARI */
     .carousel-indicators {
-        margin-bottom: 5px;
+        margin-bottom: 5px; /* Mobilde biraz yukarı çek */
     }
 </style>
 @endsection

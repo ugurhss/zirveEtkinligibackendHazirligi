@@ -145,7 +145,7 @@ VE İNSAN ZİRVESİ
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{{ asset('assets/images/program-banner-1.jpg') }}" class="d-block w-100" alt="First slide">
+            <img src="{{ asset('assets/images/program-banner-1.jpg') }}" class="d-block w-10" alt="First slide">
             {{-- <div class="carousel-caption d-none d-md-block">
                 <h5>Başlık 1</h5>
                 <p>Açıklama metni</p>

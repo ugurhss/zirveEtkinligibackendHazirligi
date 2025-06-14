@@ -7,35 +7,16 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img src="{{ asset('assets/images/t2.jpg') }}" class="d-block w-100" alt="First slide">
-             <div class="carousel-caption d-none d-md-block">
-                <h5>SÜRDÜRÜLEBİLİRLİK VE İNSAN ZİRVESİ 2025</h5>
-                <p>DİJİTALE DEĞER ODAKLI YAKLAŞIM
-12 KASIM 2025 ÇARŞAMBA</p>
-            </div>
 <a href="{{ route('program') }}" class="centered-program-button1">PROGRAM DETAYLARI</a>
-
         </div>
         <div class="carousel-item">
             <img src="{{ asset('assets/images/t1.jpg') }}" class="d-block w-100" alt="First slide">
-               <div class="carousel-caption d-none d-md-block">
- <h5>Dijital Çağda Ekonomi Sanayi
-ve Medya Nasıl Dönüşüyor ?</h5>
-                <p>Sürdürülebilirlik odaklı yenilikçi çözümleri
-keşfetmek için SİZ'25'te buluşuyoruz!</p>
-   </div>
                 <a href="{{ route('peak') }}"class="centered-program-button1">ZİRVE DETAYLARI</a>
 
         </div>
         <div class="carousel-item">
             <img src="{{ asset('assets/images/t.jpg') }}" class="d-block w-100" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
- <h5>Ana Sponsorlar
-Medya Partnerleri
-Destekleyen Kurumlar</h5>
-
-   </div>
-
-            <a href="{{ route('sponsor') }}" class="centered-program-button1">SPONSORLUK</a>
+                  <a href="{{ route('sponsor') }}" class="centered-program-button1">SPONSORLUK</a>
 
         </div>
     </div>

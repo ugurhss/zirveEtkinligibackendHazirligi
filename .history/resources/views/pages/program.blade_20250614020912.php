@@ -174,25 +174,46 @@ VE İNSAN ZİRVESİ
     </button>
 </div>
 <style>
-    #mainCarousel {
-    height: 300px; /*  */
-}
+      #mainCarousel {
+        width: 100%;
+        overflow: hidden; /* Taşan  kes */
+        position: relative; /* iç için referans oluştur */
+    }
 
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
-}
+    /* MOBİL İÇİN (Yatay modda) */
+    @media (max-width: 768px) and (orientation: portrait) {
+        #mainCarousel {
+            height: 60vw !important;
+            min-height: 200px;
+        }
+    }
 
 
+    @media (min-width: 769px), (orientation: landscape) {
+        #mainCarousel {
+            height: 400px;
+        }
+    }
+
+
+    #mainCarousel .carousel-inner,
+    #mainCarousel .carousel-item {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #mainCarousel .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    .carousel-indicators {
+        margin-bottom: 5px;
+    }
 </style>
-
     @endsection
 

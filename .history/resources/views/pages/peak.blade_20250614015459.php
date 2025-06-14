@@ -24,7 +24,7 @@ VE İNSAN ZİRVESİ
                 </p>
                 <p>
                     Bu amaçlar doğrultusunda düzenlenecek Sürdürülebilirlik ve İnsan Zirvesi’nin bu seneki temasının “Dijital Ekonomi” olmasına karar verilmiştir. Açılış konuşmaları ve 3 panel şeklinde organize edilmesi planlanan etkinliğin, katılımcıları ve gündeme getireceği başlıklarla ulusal düzeyde ses getirecek bir etkinlik olacağı düşünülmektedir.
-                <br><br></p>
+                </p>
             </div>
 
             <!-- Logo -->
@@ -36,27 +36,22 @@ VE İNSAN ZİRVESİ
 
 
 <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-    <!-- Slayt göstergeleri -->
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
         <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
     </div>
-
-    <!-- Slayt içeriği -->
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{{ asset('assets/images/zirve-hakkinda-banner-1.jpg') }}" class="d-block w-100" alt="Slayt 1">
+            <img src="{{ asset('assets/images/zirve-hakkinda-banner-1.jpg') }}" class="d-block w-100" alt="Birinci slayt">
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('assets/images/zirve-hakkinda-banner-2.jpg') }}" class="d-block w-100" alt="Slayt 2">
+            <img src="{{ asset('assets/images/zirve-hakkinda-banner-2.jpg') }}" class="d-block w-100" alt="İkinci slayt">
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('assets/images/zirve-hakkinda-banner-3.jpg') }}" class="d-block w-100" alt="Slayt 3">
+            <img src="{{ asset('assets/images/zirve-hakkinda-banner-3.jpg') }}" class="d-block w-100" alt="Üçüncü slayt">
         </div>
     </div>
-
-    <!-- Önceki/Sonraki butonlar -->
     <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
     </button>
@@ -66,29 +61,21 @@ VE İNSAN ZİRVESİ
 </div>
 
 <style>
-
+    /* Ana carousel konteyneri */
     #mainCarousel {
-        width: 100%;
-        overflow: hidden; /* Taşan  kes */
-        position: relative; /* iç için referans oluştur */
+        height: 300px; /* Masaüstü için sabit yükseklik */
+        overflow: hidden; /* Fazla içeriği keser */
     }
 
-    /* MOBİL İÇİN (Yatay modda) */
-    @media (max-width: 768px) and (orientation: portrait) {
+    /* Mobil cihazlar için ayar */
+    @media (max-width: 768px) {
         #mainCarousel {
-            height: 60vw !important;
-            min-height: 200px;
+            height: auto; /* Yüksekliği resme göre ayarla */
+            min-height: 200px; /* Minimum yükseklik garantisi */
         }
     }
 
-
-    @media (min-width: 769px), (orientation: landscape) {
-        #mainCarousel {
-            height: 400px;
-        }
-    }
-
-
+    /* İç katmanların tam yükseklikte olması */
     #mainCarousel .carousel-inner,
     #mainCarousel .carousel-item {
         height: 100%;
@@ -96,16 +83,19 @@ VE İNSAN ZİRVESİ
         padding: 0;
     }
 
+    /* Resimlerin tam alanı kaplaması */
     #mainCarousel .carousel-item img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        object-position: center;
+        object-fit: cover; /* Resmi alanı kaplayacak şekilde sığdırır */
+        object-position: center; /* Resmi ortalar */
     }
 
-
-    .carousel-indicators {
-        margin-bottom: 5px;
+    /* Ekstra boşlukları önlemek için */
+    .carousel-indicators,
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin-bottom: 0;
     }
 </style>
 @endsection

@@ -28,14 +28,7 @@ keşfetmek için SİZ'25'te buluşuyoruz!</p>
         </div>
         <div class="carousel-item">
             <img src="{{ asset('assets/images/t.jpg') }}" class="d-block w-100" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
- <h5>Ana Sponsorlar
-Medya Partnerleri
-Destekleyen Kurumlar</h5>
-
-   </div>
-
-            <a href="{{ route('sponsor') }}" class="centered-program-button1">SPONSORLUK</a>
+                  <a href="{{ route('sponsor') }}" class="centered-program-button1">SPONSORLUK</a>
 
         </div>
     </div>

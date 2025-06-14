@@ -174,25 +174,32 @@ VE İNSAN ZİRVESİ
     </button>
 </div>
 <style>
-    #mainCarousel {
-    height: 300px; /*  */
-}
-
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
+      #mainCarousel {
     width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16/9; /* Standard banner ratio */
 }
 
+/* For mobile portrait */
+@media (max-width: 768px) and (orientation: portrait) {
+    #mainCarousel {
+        aspect-ratio: 1/1; /* More square for mobile */
+    }
+}
 
+.carousel-inner, .carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Changed from cover to contain to see full image */
+    object-position: center;
+    background-color: #f5f5f5; /* Fallback color if image fails to load */
+}
 </style>
-
     @endsection
 

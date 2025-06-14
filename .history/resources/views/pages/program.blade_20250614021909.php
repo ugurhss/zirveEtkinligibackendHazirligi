@@ -175,24 +175,26 @@ VE İNSAN ZİRVESİ
 </div>
 <style>
     #mainCarousel {
-    height: 300px; /*  */
-}
+        height: 300px; /* Masaüstü için sabit yükseklik */
+    }
 
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
-}
+    #mainCarousel .carousel-inner,
+    #mainCarousel .carousel-item {
+        height: 100%;
+    }
 
+    #mainCarousel .carousel-item img {
+        width: 100%;
+        height: 100%; /* Tüm yüksekliği kaplaması için */
+        object-fit: cover; /* Resmin oranlarını bozmadan alanı kaplaması için */
+    }
 
+    /* Mobil cihazlar için responsive ayar */
+    @media (max-width: 768px) {
+        #mainCarousel {
+            height: 200px; /* Mobil için daha küçük yükseklik */
+        }
+    }
 </style>
-
     @endsection
 

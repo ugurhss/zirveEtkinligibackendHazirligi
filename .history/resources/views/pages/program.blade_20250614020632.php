@@ -175,24 +175,34 @@ VE İNSAN ZİRVESİ
 </div>
 <style>
     #mainCarousel {
-    height: 300px; /*  */
-}
+        height: 300px;
+        display: flex;
+        align-items: center; /* Dikeyde ortala */
+    }
 
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
-}
+    #mainCarousel .carousel-inner {
+        width: 100%;
+    }
 
+    #mainCarousel .carousel-item {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    #mainCarousel .carousel-item img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain; /* Orjinal oranları koru */
+    }
+
+    @media (max-width: 768px) {
+        #mainCarousel,
+        #mainCarousel .carousel-item {
+            height: 200px;
+        }
+    }
 </style>
-
     @endsection
 

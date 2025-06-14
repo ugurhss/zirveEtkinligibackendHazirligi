@@ -191,7 +191,30 @@ VE İNSAN ZİRVESİ
     /* object-fit: contain; --*/
 }
 
+  @media (max-width: 768px) {
+        #mainCarousel {
+            max-height: 300px; /* Mobilde daha küçük yükseklik */
+        }
 
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 1.5rem; /* Daha küçük navigasyon okları */
+            height: 1.5rem;
+        }
+
+        .carousel-indicators button {
+            width: 8px; /* Daha küçük indicator noktaları */
+            height: 8px;
+            margin: 0 3px;
+            border-radius: 50%;
+        }
+    }
+
+    /* Daha küçük mobil cihazlar için */
+    @media (max-width: 576px) {
+        #mainCarousel {
+            max-height: 250px;
+        }
 </style>
 
     @endsection

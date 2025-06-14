@@ -173,26 +173,56 @@ VE İNSAN ZİRVESİ
         <span class="carousel-control-next-icon"></span>
     </button>
 </div>
-<style>
+
+      <style>
     #mainCarousel {
-    height: 300px; /*  */
-}
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding: 0; /* Üst ve alttan padding'i sıfırla */
+        margin: 0; /* Margin'i de sıfırla */
+    }
 
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
-}
+    /* MOBİL İÇİN (Yatay modda) */
+    @media (max-width: 768px) and (orientation: portrait) {
+        #mainCarousel {
+            height: 60vw !important;
+            min-height: 200px;
+        }
+    }
 
+    @media (min-width: 769px), (orientation: landscape) {
+        #mainCarousel {
+            height: 400px;
+        }
+    }
+
+    #mainCarousel .carousel-inner,
+    #mainCarousel .carousel-item {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #mainCarousel .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Resmi tamamen kaplayacak şekilde ayarla */
+        object-position: center;
+        display: block; /* Resmin altındaki boşluğu kaldırır */
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0; /* İndikatörlerin alt boşluğunu kaldır */
+        bottom: 5px; /* İndikatörleri biraz yukarı çek */
+    }
+
+    /* Carousel kontrollerini de ayarla */
+    .carousel-control-prev, .carousel-control-next {
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
 </style>
-
     @endsection
 

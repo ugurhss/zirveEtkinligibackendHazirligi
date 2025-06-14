@@ -175,7 +175,7 @@ VE İNSAN ZİRVESİ
 </div>
 <style>
     #mainCarousel {
-    height: 420px; /*  */
+    height: 300px; /*  */
 }
 
 #mainCarousel .carousel-inner,

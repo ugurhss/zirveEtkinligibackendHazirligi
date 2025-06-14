@@ -30,14 +30,7 @@
 <link rel="icon" href="{{ asset('assets/images/sizLogo.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ asset('assets/css/styles1.css') }}">
         {{-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> --}}
-<!-- Favicon for most browsers -->
-<link rel="icon" href="{{ asset('assets/images/sizLogo.png') }}" type="image/png">
 
-<!-- Apple Touch Icon (for iOS devices) -->
-<link rel="apple-touch-icon" href="{{ asset('assets/images/sizLogo.png') }}">
-
-<!-- Favicon for IE 10 and below -->
-<link rel="shortcut icon" href="{{ asset('assets/images/sizLogo.ico') }}" type="image/x-icon">
     @stack('styles')
 </head>
 <body>

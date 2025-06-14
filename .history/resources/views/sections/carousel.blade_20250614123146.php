@@ -73,8 +73,8 @@
 
     /* Hover efekti - Mor RGB (128, 0, 128) */
     .btn-transparent:hover {
-        background-color: rgba(37, 4, 52, 0.7);
-        border-color: rgba(37, 4, 52, 0.9);
+        background-color: rgba(128, 0, 128, 0.7);
+        border-color: rgba(128, 0, 128, 0.9);
     }
 
     /* Responsive ayarlar */

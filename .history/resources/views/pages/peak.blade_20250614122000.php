@@ -67,22 +67,6 @@ VE İNSAN ZİRVESİ
 
 <style>
 
- #mainCarousel {
-    height: 420px; /*  */
-}
-
-#mainCarousel .carousel-inner,
-#mainCarousel .carousel-item,
-#mainCarousel .carousel-item img {
-    height: 100%; /* */
-    object-fit: cover; /*  */
-}
-#mainCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /*  */
-    object-fit: cover; /**/
-    /* object-fit: contain; --*/
-}
 
 </style>
 @endsection
